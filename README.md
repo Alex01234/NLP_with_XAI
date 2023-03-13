@@ -1,6 +1,8 @@
 # NLP_with_XAI
 ## Overview
-In thius
+
+In this
+
 ---
 ## Setup, installing Python and installing packages
 ---
