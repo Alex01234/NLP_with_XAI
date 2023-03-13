@@ -7,7 +7,7 @@ In this project, I will describe step-by-step how to fine-tune a BERT model to c
 ## Setup, installing Python and installing packages
 For reference, I am using a PC, running Windows 10 Home 64-bit operating system. My machine has an 11th Gen Intel(R) Core(TM) i7-1195G7 @ 2.90GHz processor, 16 GB of RAM and a NVIDIA® GeForce RTX™ 3050 Laptop GPU, 4GB GDDR6 graphics card.
 
-### Installing Python 
+#### Installing Python 
 
 ---
 ## Exploring and preparing data
