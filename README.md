@@ -1,5 +1,4 @@
 # NLP_with_XAI
-## Overview
 
 In this project, I will describe step-by-step how to fine-tune a BERT model to classify texts with multiple labels and how to use the eXplainable AI (XAI) models LIME and SHAP in order to understand individual classifications of texts made by BERT. 
 
