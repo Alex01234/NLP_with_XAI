@@ -29,7 +29,7 @@ For this project, use Python 3.7.0. I installed it from here: https://www.python
 ## Exploring and preparing data
 - First, the data (data.csv) needs to be cleaned. The texts in the column "ABSTRACT" contains new-line characters, which we need to replace with spaces. This will make it easier for test the model later. I am using Libre Office Calc to do this. Open the file data.csv with Libre Office Calc, mark the column "ABSTRACT", select the "Edit" tab, select "Find and Replace...", enter "\n" in the "Find" field, enter " " (space character) in the "Replace" field, tick "Current selection only" and "Regular expressions" boxes. Click "Replace all". The changes should take place. Save the file (Use text CSV format).
 - Visualize the class distribution in the data, by running the function visualise_class_distribution in the file NLP_multi_label_classification.py. From cmd: python NLP_multi_label_classification.py visualise_class_distribution data.csv
-![data_class_distribution.png](https://github.com/Alex01234/NLP_with_XAI/blob/main/data_class_distribution.PNG)
+![data_class_distribution.png](https://github.com/Alex01234/NLP_with_XAI/blob/main/data_class_distribution.png)
 - 
 ---
 ## Cross validation
