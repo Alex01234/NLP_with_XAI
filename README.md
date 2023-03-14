@@ -16,14 +16,14 @@ For this project, use Python 3.7.0. I installed it from here: https://www.python
 - Install the package "virualenv" using pip. In cmd, run the command "pip install virtualenv". 
 - In cmd, navigate to a directory of your choice. Create a directory (which we will be working in) using the mkdir command. Type "mkdir <directory_name>". Navigate into the newly created directory. Create a virtual enviornment with the command "virtualenv env". To activate the virtual environment, run the command "env\Scripts\activate.bat". This command must be run from this directory every time you want to activate the virtual environment, which we will be working in.
 - Also, move the file "data.csv" to the directory that you have created.
-TODO: reference setting_up_virtual_environment.PNG
+![setting_up_virtual_environment](https://github.com/Alex01234/NLP_with_XAI/blob/main/setting_up_virtual_environment.PNG)
 
 #### Installing Python packages
 - Install the packages torch, torchvision and torchaudio with cuda enabled. Run the command: "pip install torch===1.7.1+cu110 torchvision===0.8.2+cu110 torchaudio===0.7.2 -f https://download.pytorch.org/whl/torch_stable.html" 
 ![installing_python_packages_1](https://github.com/Alex01234/NLP_with_XAI/blob/main/installing_python_packages_1.PNG)
 
 - Install the remaining of the required packages from the file "required_packages.txt" (TODO: INSERT LINK). Place the file required_packages.txt in the directory and run the command "pip install -r required_packages.txt". 
-TODO: reference installing_python_packages_2.png
+![installing_python_packages_2](https://github.com/Alex01234/NLP_with_XAI/blob/main/installing_python_packages_2.PNG)
 
 ---
 ## Exploring and preparing data
