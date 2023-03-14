@@ -22,7 +22,7 @@ For this project, use Python 3.7.0. I installed it from here: https://www.python
 - Install the packages torch, torchvision and torchaudio with cuda enabled. Run the command: "pip install torch===1.7.1+cu110 torchvision===0.8.2+cu110 torchaudio===0.7.2 -f https://download.pytorch.org/whl/torch_stable.html" 
 ![installing_python_packages_1](https://github.com/Alex01234/NLP_with_XAI/blob/main/installing_python_packages_1.PNG)
 
-- Install the remaining of the required packages from the file "required_packages.txt" (TODO: INSERT LINK). Place the file required_packages.txt in the directory and run the command "pip install -r required_packages.txt". 
+- Install the remaining of the required packages from the file ["required_packages.txt"](https://github.com/Alex01234/NLP_with_XAI/blob/main/required_packages.txt). Place the file required_packages.txt in the directory and run the command "pip install -r required_packages.txt". 
 ![installing_python_packages_2](https://github.com/Alex01234/NLP_with_XAI/blob/main/installing_python_packages_2.PNG)
 
 ---
