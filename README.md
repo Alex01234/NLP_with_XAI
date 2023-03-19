@@ -37,7 +37,8 @@ For this project, use Python 3.7.0. I installed it from here: https://www.python
 
 ---
 ## Cross validation
-All hyperparameters used to fine-tune the BERT model, except for the number of epochs, are based on ![academic studies](https://arxiv.org/pdf/1810.04805.pdf&usg=ALkJrhhzxlCL6yTht2BRmH9atgvKFxHsxQ).
+
+All hyperparameters used to fine-tune the BERT model, except for the number of epochs, are based on ![academic studies](https://arxiv.org/pdf/1810.04805.pdf&usg=ALkJrhhzxlCL6yTht2BRmH9atgvKFxHsxQ). In order to determine how many epochs to fine-tune (train) the model for, cross-validiation needs to be performed. The cross-validation is performed with the dataset that contains all data except for the test-data, meaning the training data and the validation data. This data is stored in the file "no_test.csv". Call the function cross_validation in the file NLP_multi_label_classification.py. From cmd: "python NLP_multi_label_classification.py cross_validation no_test.csv". WRITE ABOUT OUTPUT GENERATE (CMD AND OUTPUT_DIRECTORY). sCREENSHOT OF TABLES AND EXPLANATION
 ---
 ## Fine-tuning/ Training
 ---
