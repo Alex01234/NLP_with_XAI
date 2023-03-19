@@ -53,6 +53,10 @@ To fine-tune the model, call the function fine_tune_model in the file NLP_multi_
 ![fine_tuning](https://raw.githubusercontent.com/Alex01234/NLP_with_XAI/main/fine_tuning.PNG)
 ---
 ## Testing
+
+To test the model against with test-set (the file test.csv), call the function test_model in the file NLP_multi_label_classification.py. From cmd: "python NLP_multi_label_classification.py test_model <Full path to fine-tuned tokenizer> <Full path to fined-tuned model> test.csv", example "python NLP_multi_label_classification.py test_model C:\Users\Alexander\source\nlp_with_xai\output_dir_model_and_tokenizer\fine_tuned_tokenizer C:\Users\Alexander\source\nlp_with_xai\output_dir_model_and_tokenizer\fine_tuned_model test.csv". This will test the fine-tuned model against the test-set, and ouput the accuracy, as well as the weighted, micro-averaged and macro-averaged precision, recall and F1 score. 
+  
+![testing_results](https://raw.githubusercontent.com/Alex01234/NLP_with_XAI/main/testing_results.PNG)
 ---
 ## Generating explanations with LIME
 ---
