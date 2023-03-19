@@ -2,6 +2,8 @@
 
 In this project, I will describe step-by-step how to fine-tune a BERT model to classify texts with multiple labels and how to use the eXplainable AI (XAI) models LIME and SHAP in order to understand individual classifications of texts made by BERT. 
 
+Note: This code is based upon an original code by myself (Alexander Dolk) and Hjalmar Davidsen. The [original code](https://github.com/Alex01234/MastersThesis/) was used for our Master thesis at Stockholm University, and for our [published academic article](https://ecp.ep.liu.se/index.php/shi/article/view/456). 
+
 ---
 ## Setup: Downloading data, installing Python, setting up virtual environment and installing packages
 For reference, I am using a PC, running Windows 10 Home 64-bit operating system. My machine has an 11th Gen Intel(R) Core(TM) i7-1195G7 @ 2.90GHz processor, 16 GB of RAM and a NVIDIA® GeForce RTX™ 3050 Laptop GPU, 4GB GDDR6 graphics card.
@@ -45,6 +47,10 @@ All hyperparameters used to fine-tune the BERT model, except for the number of e
 
 ---
 ## Fine-tuning/ Training
+
+To fine-tune the model, call the function fine_tune_model in the file NLP_multi_label_classification.py. From cmd: "python NLP_multi_label_classification.py fine_tune_model train.csv validation.csv output_dir_model_and_tokenizer fine_tuned_model fine_tuned_tokenizer". The fine-tuned model and tokenizer will be saved in the directories "\output_dir_model_and_tokenizer\fine_tuned_model" and "\output_dir_model_and_tokenizer\fine_tuned_tokenizer". 
+
+![fine_tuning](https://raw.githubusercontent.com/Alex01234/NLP_with_XAI/main/cross_validation_results.PNG)
 ---
 ## Testing
 ---
@@ -52,5 +58,3 @@ All hyperparameters used to fine-tune the BERT model, except for the number of e
 ---
 ## Generating explanations with SHAP
 ---
-
-Note: This code is based upon an original code by myself (Alexander Dolk) and Hjalmar Davidsen. The [original code](https://github.com/Alex01234/MastersThesis/) was used for our Master thesis at Stockholm University, and for our [published academic article](https://ecp.ep.liu.se/index.php/shi/article/view/456). 
