@@ -37,7 +37,11 @@ For this project, use Python 3.7.0. I installed it from here: https://www.python
 
 ---
 ## Cross validation
-All hyperparameters used to fine-tune the BERT model, except for the number of epochs, are based on ![academic studies](https://arxiv.org/pdf/1810.04805.pdf&usg=ALkJrhhzxlCL6yTht2BRmH9atgvKFxHsxQ). In order to determine how many epochs to fine-tune (train) the model for, cross-validiation needs to be performed. The cross-validation is performed with the dataset that contains all data except for the test-data, meaning the training data and the validation data. This data is stored in the file "no_test.csv". Call the function cross_validation in the file NLP_multi_label_classification.py. From cmd: "python NLP_multi_label_classification.py cross_validation no_test.csv". WRITE ABOUT OUTPUT GENERATE (CMD AND OUTPUT_DIRECTORY). sCREENSHOT OF TABLES AND EXPLANATION
+All hyperparameters used to fine-tune the BERT model, except for the number of epochs, are based on ![academic studies](https://arxiv.org/pdf/1810.04805.pdf&usg=ALkJrhhzxlCL6yTht2BRmH9atgvKFxHsxQ). Also, due to the technical limitaions of my machine, I was required to use a batch size of 1. In order to determine how many epochs to fine-tune (train) the model for, cross-validiation needs to be performed. The cross-validation is performed with the dataset that contains all data except for the test-data, meaning the training data and the validation data. This data is stored in the file "no_test.csv". Call the function cross_validation in the file NLP_multi_label_classification.py. From cmd: "python NLP_multi_label_classification.py cross_validation no_test.csv". This process may take many hours, depending on your machine. Model checkpoints are stored on your machine in the directory "output_directory". The output in the console describes the training loss and validation loss during the cross validation. I have copied and pasted this output to the document "cross_validation_output.txt", as well as arranged the results in the document "cross_validation_output.ods" (seen in the image below). Unfortunately, due to the lage output in the command prompt, the results from the first iteration were lost. As seen by the results, the lowest validation loss is achieved after only one epoch of fine-tuning, which will be used during the real fine-tuning of the model.
+
+
+
+WRITE ABOUT OUTPUT GENERATE (CMD AND OUTPUT_DIRECTORY). sCREENSHOT OF TABLES AND EXPLANATION
 
 ---
 ## Fine-tuning/ Training
