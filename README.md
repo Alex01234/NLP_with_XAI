@@ -37,6 +37,7 @@ For this project, use Python 3.7.0. I installed it from here: https://www.python
 
 ---
 ## Cross validation
+All hyperparameters used to fine-tune the BERT model, except for the number of epochs, are based on ![academic studies](https://arxiv.org/pdf/1810.04805.pdf&usg=ALkJrhhzxlCL6yTht2BRmH9atgvKFxHsxQ).
 ---
 ## Fine-tuning/ Training
 ---
