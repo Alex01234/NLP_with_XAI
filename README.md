@@ -50,7 +50,7 @@ All hyperparameters used to fine-tune the BERT model, except for the number of e
 
 To fine-tune the model, call the function fine_tune_model in the file NLP_multi_label_classification.py. From cmd: "python NLP_multi_label_classification.py fine_tune_model train.csv validation.csv output_dir_model_and_tokenizer fine_tuned_model fine_tuned_tokenizer". The fine-tuned model and tokenizer will be saved in the directories "\output_dir_model_and_tokenizer\fine_tuned_model" and "\output_dir_model_and_tokenizer\fine_tuned_tokenizer". 
 
-![fine_tuning](https://raw.githubusercontent.com/Alex01234/NLP_with_XAI/main/cross_validation_results.PNG)
+![fine_tuning](https://raw.githubusercontent.com/Alex01234/NLP_with_XAI/main/fine_tuning.PNG)
 ---
 ## Testing
 ---
