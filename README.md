@@ -71,16 +71,22 @@ The true values for the labels are 1, 0, 1 and 0.
 
 img_2
 
+The predicted probabilites for example 2 are 0.00013282, 0.99969, 0.0000076779 and 0.00017431 <br>
+The true values for the labels are 1, 1, 0 and 0.
 
 - Example 3: 
 
 img_3
 
+The predicted probabilites for example 3 are 0.099101, 0.000048938, 0.00040566 and 0.90044 <br>
+The true values for the labels are 1, 0, 1 and 1.
 
 - Example 4: 
 
 img_4
 
+The predicted probabilites for example 4 are 0.98358, 0.000041084, 0.000057405 and 0.016319 <br>
+The true values for the labels are 1, 0, 0 and 1.
 
 ---
 ## Generating explanations with LIME
