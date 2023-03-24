@@ -64,8 +64,7 @@ To fine-tune the model, call the function fine_tune_model in the file NLP_multi_
 
 img_1
 
-The predicted probabilites for example 1 are 0.99686, 0.000031286, 0.0027836 and 0.00032599.
-
+The predicted probabilites for example 1 are 0.99686, 0.000031286, 0.0027836 and 0.00032599 <br>
 The true values for the labels are 1, 0, 1 and 0.
 
 - Example 2: 
