@@ -58,7 +58,29 @@ To fine-tune the model, call the function fine_tune_model in the file NLP_multi_
   
 ![testing_results](https://raw.githubusercontent.com/Alex01234/NLP_with_XAI/main/testing_results.PNG)
   
- - To test the BERT model with individual samples...
+ - To test the BERT model with individual samples, call the function get_prediction_for_text in the file NLP_multi_label_classification.py. From cmd: "python NLP_multi_label_classification.py get_prediction_for_text Full_path_to_fine-tuned_tokenizer Full_path_to_fined-tuned_model Input_text_without_new_line_characters_enclosed_in_double_quotes". In the examples below from the test-set, you see the predicted probabilities by the BERT model, for each of the labels in the dataset. That is, for the labels Computer Science, Physics, Mathematics and Statistics.
+ 
+- Example 1:
+
+img_1
+The predicted probabilites for example 1 are 0.99686, 0.000031286, 0.0027836 and 0.00032599 
+The true values for the labels are 1, 0, 1 and 0.
+
+- Example 2: 
+
+img_2
+
+
+- Example 3: 
+
+img_3
+
+
+- Example 4: 
+
+img_4
+
+
 ---
 ## Generating explanations with LIME
 ---
