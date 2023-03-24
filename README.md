@@ -90,6 +90,31 @@ The true values for the labels are 1, 0, 0 and 1.
 
 ---
 ## Generating explanations with LIME
+To generate explanations with LIME, we will use Google Colab Notebooks.
+- Go to Google Drive.
+- Either create a Google Colab Notebook and name it to whatever you want, or upload the file NLP_with_XAI_LIME.ipynb.
+- To Google Drive, you will upload your folders containing the fine tuned model and fine tuned tokenizer that were generated when we trained our BERT model. Observe that the paths to the tokenizer and the model might have to be adjusted in the file NLP_with_XAI_LIME.ipynb
+- Re-use the code from the file NLP_with_XAI_LIME.ipynb, either by downloading the file and uploading it to your Google Drive, or copying and pasting the code to your own Google Colab Notebook.
+- Run the code, cell by cell.
+- In the final cell, the variable "text" can be set equal to the text that you want to generate an explanation for. This will generate explanations for the classifications of all the labels by the BERT model, as interpreted by LIME. 
+
+- Example 1: 
+img_1
+Comment...
+
+- Example 2: 
+img_2
+Comment...
+
+- Example 3: 
+img_3
+Comment...
+
+- Example 4: 
+img_4
+Comment...
+
 ---
 ## Generating explanations with SHAP
+
 ---
