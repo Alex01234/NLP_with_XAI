@@ -132,5 +132,28 @@ To generate explanations with SHAP, we will use Google Colab Notebooks aswell.
 - Run the code, cell by cell.
 - In the final cell, the variable "text" can be set equal to the text that you want to generate an explanation for. This will generate explanations for the classifications of all the labels by the BERT model, as interpreted by SHAP. See section 3.6 in this [article](https://ecp.ep.liu.se/index.php/shi/article/view/456) for an explanation how SHAP generates explanations.
 
+- Example 1: 
+
+gif1
+
+Comment 1
+
+- Example 2: 
+
+gif2
+
+Comment 2
+
+- Example 3: 
+
+gif3
+
+Comment 3
+
+- Example 4: 
+
+gif4
+
+Comment 4
 
 ---
