@@ -99,19 +99,27 @@ To generate explanations with LIME, we will use Google Colab Notebooks.
 - In the final cell, the variable "text" can be set equal to the text that you want to generate an explanation for. This will generate explanations for the classifications of all the labels by the BERT model, as interpreted by LIME. 
 
 - Example 1: 
-img_1
+
+![LIME_test_1](https://raw.githubusercontent.com/Alex01234/NLP_with_XAI/main/LIME_test_1.PNG)
+
 Comment...
 
 - Example 2: 
-img_2
+
+![LIME_test_2]()
+
 Comment...
 
 - Example 3: 
-img_3
+
+![LIME_test_3]()
+
 Comment...
 
 - Example 4: 
-img_4
+
+![LIME_test_4]()
+
 Comment...
 
 ---
