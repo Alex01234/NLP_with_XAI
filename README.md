@@ -20,7 +20,7 @@ For this project, use Python 3.7.0. I installed it from here: https://www.python
 
 #### Setting up virtual environment
 - Install the package "virualenv" using pip. In cmd, run the command "pip install virtualenv". 
-- In cmd, navigate to a directory of your choice. Create a directory (which we will be working in) using the mkdir command. Type "mkdir <directory_name>". Navigate into the newly created directory. Create a virtual enviornment with the command "virtualenv env". To activate the virtual environment, run the command "env\Scripts\activate.bat". This command must be run from this directory every time you want to activate the virtual environment, which we will be working in.
+- In cmd, navigate to a directory of your choice. Create a directory (which we will be working in) using the mkdir command. Type "mkdir <directory_name>". Navigate into the newly created directory. Create a virtual environment with the command "virtualenv env". To activate the virtual environment, run the command "env\Scripts\activate.bat". This command must be run from this directory every time you want to activate the virtual environment, which we will be working in.
 - Also, move the file "data.csv" to the directory that you have created.
 ![setting_up_virtual_environment](https://github.com/Alex01234/NLP_with_XAI/blob/main/setting_up_virtual_environment.PNG)
 
@@ -45,7 +45,7 @@ For this project, use Python 3.7.0. I installed it from here: https://www.python
 
 ---
 ## Cross validation
-All hyperparameters used to fine-tune the BERT model, except for the number of epochs, are based on ![academic studies](https://arxiv.org/pdf/1810.04805.pdf&usg=ALkJrhhzxlCL6yTht2BRmH9atgvKFxHsxQ). Also, due to the technical limitaions of my machine, I was required to use a batch size of 1. In order to determine how many epochs to fine-tune (train) the model for, cross-validiation needs to be performed. The cross-validation is performed with the dataset that contains all data except for the test-data, meaning the training data and the validation data. This data is stored in the file "no_test.csv". Call the function cross_validation in the file NLP_multi_label_classification.py. From cmd: "python NLP_multi_label_classification.py cross_validation no_test.csv". This process may take many hours, depending on your machine. Model checkpoints are stored on your machine in the directory "output_directory". The output in the console describes the training loss and validation loss during the cross validation. I have copied and pasted this output to the document "cross_validation_output.txt", as well as arranged the results in the document "cross_validation_output.ods" (seen in the image below). Unfortunately, due to the lage output in the command prompt, the results from the first iteration were lost. As seen by the results, the lowest validation loss is achieved after only one epoch of fine-tuning, which will be used during the real fine-tuning of the model.
+All hyperparameters used to fine-tune the BERT model, except for the number of epochs, are based on ![academic studies](https://arxiv.org/pdf/1810.04805.pdf&usg=ALkJrhhzxlCL6yTht2BRmH9atgvKFxHsxQ). Also, due to the technical limitations of my machine, I was required to use a batch size of 1. In order to determine how many epochs to fine-tune (train) the model for, cross-validation needs to be performed. The cross-validation is performed with the dataset that contains all data except for the test-data, meaning the training data and the validation data. This data is stored in the file "no_test.csv". Call the function cross_validation in the file NLP_multi_label_classification.py. From cmd: "python NLP_multi_label_classification.py cross_validation no_test.csv". This process may take many hours, depending on your machine. Model checkpoints are stored on your machine in the directory "output_directory". The output in the console describes the training loss and validation loss during the cross validation. I have copied and pasted this output to the document "cross_validation_output.txt", as well as arranged the results in the document "cross_validation_output.ods" (seen in the image below). Unfortunately, due to the lage output in the command prompt, the results from the first iteration were lost. As seen by the results, the lowest validation loss is achieved after only one epoch of fine-tuning, which will be used during the real fine-tuning of the model.
 
 ![cross_validation_results](https://raw.githubusercontent.com/Alex01234/NLP_with_XAI/main/cross_validation_results.PNG)
 
@@ -58,7 +58,7 @@ To fine-tune the model, call the function fine_tune_model in the file NLP_multi_
 ---
 ## Testing
 
-- To test the model against with test-set (the file test.csv), call the function test_model in the file NLP_multi_label_classification.py. <br> From cmd: "python NLP_multi_label_classification.py test_model Full_path_to_fine-tuned_tokenizer Full_path_to_fined-tuned_model test.csv", example "python NLP_multi_label_classification.py test_model C:\Users\Alexander\source\nlp_with_xai\output_dir_model_and_tokenizer\fine_tuned_tokenizer C:\Users\Alexander\source\nlp_with_xai\output_dir_model_and_tokenizer\fine_tuned_model test.csv". This will test the fine-tuned model against the test-set, and ouput the accuracy, as well as the weighted, micro-averaged and macro-averaged precision, recall and F1 score. 
+- To test the model against with test-set (the file test.csv), call the function test_model in the file NLP_multi_label_classification.py. <br> From cmd: "python NLP_multi_label_classification.py test_model Full_path_to_fine-tuned_tokenizer Full_path_to_fined-tuned_model test.csv", example "python NLP_multi_label_classification.py test_model C:\Users\Alexander\source\nlp_with_xai\output_dir_model_and_tokenizer\fine_tuned_tokenizer C:\Users\Alexander\source\nlp_with_xai\output_dir_model_and_tokenizer\fine_tuned_model test.csv". This will test the fine-tuned model against the test-set, and output the accuracy, as well as the weighted, micro-averaged and macro-averaged precision, recall and F1 score. 
   
 ![testing_results](https://raw.githubusercontent.com/Alex01234/NLP_with_XAI/main/testing_results.PNG)
   
@@ -68,28 +68,28 @@ To fine-tune the model, call the function fine_tune_model in the file NLP_multi_
 
 ![BERT_test_1](https://raw.githubusercontent.com/Alex01234/NLP_with_XAI/main/BERT_test_1.PNG)
 
-The predicted probabilites for example 1 are 0.99686, 0.000031286, 0.0027836 and 0.00032599 <br>
+The predicted probabilities for example 1 are 0.99686, 0.000031286, 0.0027836 and 0.00032599 <br>
 The true values for the labels are 1, 0, 1 and 0.
 
 - Example 2: 
 
 ![BERT_test_2](https://raw.githubusercontent.com/Alex01234/NLP_with_XAI/main/BERT_test_2.PNG)
 
-The predicted probabilites for example 2 are 0.88798, 0.000096437, 0.11174 and 0.00018281 <br>
+The predicted probabilities for example 2 are 0.88798, 0.000096437, 0.11174 and 0.00018281 <br>
 The true values for the labels are 1, 0, 1 and 0.
 
 - Example 3: 
 
 ![BERT_test_3](https://raw.githubusercontent.com/Alex01234/NLP_with_XAI/main/BERT_test_3.PNG)
 
-The predicted probabilites for example 3 are 0.000056733, 0.00001346, 0.81582 and 0.18411 <br>
+The predicted probabilities for example 3 are 0.000056733, 0.00001346, 0.81582 and 0.18411 <br>
 The true values for the labels are 0, 0, 1 and 1.
 
 - Example 4: 
 
 ![BERT_test_4](https://raw.githubusercontent.com/Alex01234/NLP_with_XAI/main/BERT_test_4.PNG)
 
-The predicted probabilites for example 4 are 0.000017749, 0.0000030367, 0.99998 and 0.0000042155 <br>
+The predicted probabilities for example 4 are 0.000017749, 0.0000030367, 0.99998 and 0.0000042155 <br>
 The true values for the labels are 1, 0, 1 and 0.
 
 ---
