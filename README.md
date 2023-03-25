@@ -138,25 +138,25 @@ To generate explanations with SHAP, we will use Google Colab Notebooks aswell.
 
 - Example 1: 
 
-[SHAP_test_1](https://raw.githubusercontent.com/Alex01234/NLP_with_XAI/main/SHAP_test_1.gif)
+![SHAP_test_1](https://raw.githubusercontent.com/Alex01234/NLP_with_XAI/main/SHAP_test_1.gif)
 
 Comment 1
 
 - Example 2: 
 
-[SHAP_test_2](https://raw.githubusercontent.com/Alex01234/NLP_with_XAI/main/SHAP_test_2.gif)
+![SHAP_test_2](https://raw.githubusercontent.com/Alex01234/NLP_with_XAI/main/SHAP_test_2.gif)
 
 Comment 2
 
 - Example 3: 
 
-[SHAP_test_3](https://raw.githubusercontent.com/Alex01234/NLP_with_XAI/main/SHAP_test_3.gif)
+![SHAP_test_3](https://raw.githubusercontent.com/Alex01234/NLP_with_XAI/main/SHAP_test_3.gif)
 
 Comment 3
 
 - Example 4: 
 
-[SHAP_test_4](https://raw.githubusercontent.com/Alex01234/NLP_with_XAI/main/SHAP_test_4.gif)
+![SHAP_test_4](https://raw.githubusercontent.com/Alex01234/NLP_with_XAI/main/SHAP_test_4.gif)
 
 Comment 4
 
