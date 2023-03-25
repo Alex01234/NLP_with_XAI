@@ -106,19 +106,19 @@ Comment...
 
 - Example 2: 
 
-![LIME_test_2]()
+![LIME_test_2](https://raw.githubusercontent.com/Alex01234/NLP_with_XAI/main/LIME_test_2.PNG)
 
 Comment...
 
 - Example 3: 
 
-![LIME_test_3]()
+![LIME_test_3](https://raw.githubusercontent.com/Alex01234/NLP_with_XAI/main/LIME_test_3.PNG)
 
 Comment...
 
 - Example 4: 
 
-![LIME_test_4]()
+![LIME_test_4](https://raw.githubusercontent.com/Alex01234/NLP_with_XAI/main/LIME_test_4.PNG)
 
 Comment...
 
