@@ -96,31 +96,31 @@ To generate explanations with LIME, we will use Google Colab Notebooks.
 - To Google Drive, you will upload your folders containing the fine tuned model and fine tuned tokenizer that were generated when we trained our BERT model. Observe that the paths to the tokenizer and the model might have to be adjusted in the file NLP_with_XAI_LIME.ipynb
 - Re-use the code from the file NLP_with_XAI_LIME.ipynb, either by downloading the file and uploading it to your Google Drive, or copying and pasting the code to your own Google Colab Notebook.
 - Run the code, cell by cell.
-- In the final cell, the variable "text" can be set equal to the text that you want to generate an explanation for. This will generate explanations for the classifications of all the labels by the BERT model, as interpreted by LIME. 
+- In the final cell, the variable "text" can be set equal to the text that you want to generate an explanation for. This will generate explanations for the classifications of all the labels by the BERT model, as interpreted by LIME. See section 3.6 in this [article](https://ecp.ep.liu.se/index.php/shi/article/view/456) for an explanation how LIME generates explanations.
 
 - Example 1: 
 
 ![LIME_test_1](https://raw.githubusercontent.com/Alex01234/NLP_with_XAI/main/LIME_test_1.PNG)
 
-Comment...
+For example 1, LIME predicts the label ComputerScience with a probability of 0.92, with the words "algorithm" and "complexity" having the greatest positive impact to the classification.
 
 - Example 2: 
 
 ![LIME_test_2](https://raw.githubusercontent.com/Alex01234/NLP_with_XAI/main/LIME_test_2.PNG)
 
-Comment...
+For example 2, LIME predicts the label ComputerScience with a probability of 0.99, with the words "code", "codeword", "alphabet" and "codes" having the greatest positive impact on the classification. Interestingly, the same words have the greates negative impact for the text to be labelled with the label Mathematics.
 
 - Example 3: 
 
 ![LIME_test_3](https://raw.githubusercontent.com/Alex01234/NLP_with_XAI/main/LIME_test_3.PNG)
 
-Comment...
+For example 3, LIME predicts the label Mathematics with a probability of 0.96, with the word "functions" having the greatest positive impact on the classification, although it seems no word has an impact much greater than many other words. 
 
 - Example 4: 
 
 ![LIME_test_4](https://raw.githubusercontent.com/Alex01234/NLP_with_XAI/main/LIME_test_4.PNG)
 
-Comment...
+For example 4, LIME predicts the label Mathematics with a probability of 1.00, with the words "axiomatisability" and "finite" having the greatest positive impact on the classification.
 
 ---
 ## Generating explanations with SHAP
