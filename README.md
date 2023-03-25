@@ -140,24 +140,22 @@ To generate explanations with SHAP, we will use Google Colab Notebooks aswell.
 
 ![SHAP_test_1](https://raw.githubusercontent.com/Alex01234/NLP_with_XAI/main/SHAP_test_1.gif)
 
-Comment 1
+For example 1, SHAP predicts the label Computer Science with the highest probability, where the words "algorithm"(x3) and "complexity" contribute most positively to the classification.
 
 - Example 2: 
 
 ![SHAP_test_2](https://raw.githubusercontent.com/Alex01234/NLP_with_XAI/main/SHAP_test_2.gif)
 
-Comment 2
+For example 2, SHAP predicts the label Computer Science with the highest probability, where the words "codeword", "code", "a" and "recoverable" contribute most positively to the classification.
 
 - Example 3: 
 
 ![SHAP_test_3](https://raw.githubusercontent.com/Alex01234/NLP_with_XAI/main/SHAP_test_3.gif)
 
-Comment 3
+For example 3, SHAP predicts the label Mathematics with the highest probability, where the words "existence", "functions"(x2), "coefficients" and "asymptotically" contribute most positively to the classification.
 
 - Example 4: 
 
 ![SHAP_test_4](https://raw.githubusercontent.com/Alex01234/NLP_with_XAI/main/SHAP_test_4.gif)
 
-Comment 4
-
----
+For example 4, SHAP predicts the label Mathematics with the highest probability, where the words "axiomatisability", "finite"(x2), "hypergraphs" and "generated" contribute most positively to the classification.
