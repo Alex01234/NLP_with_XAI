@@ -62,31 +62,31 @@ To fine-tune the model, call the function fine_tune_model in the file NLP_multi_
  
 - Example 1:
 
-![BERT_test_1]()
+![BERT_test_1](https://raw.githubusercontent.com/Alex01234/NLP_with_XAI/main/BERT_test_1.PNG)
 
-The predicted probabilites for example 1 are x, x, x and x <br>
-The true values for the labels are x, x, x and x.
+The predicted probabilites for example 1 are 0.99686, 0.000031286, 0.0027836 and 0.00032599 <br>
+The true values for the labels are 1, 0, 1 and 0.
 
 - Example 2: 
 
-![BERT_test_2]()
+![BERT_test_2](https://raw.githubusercontent.com/Alex01234/NLP_with_XAI/main/BERT_test_2.PNG)
 
-The predicted probabilites for example 2 are x, x, x and x <br>
-The true values for the labels are x, x, x and x.
+The predicted probabilites for example 2 are 0.88798, 0.000096437, 0.11174 and 0.00018281 <br>
+The true values for the labels are 1, 0, 1 and 0.
 
 - Example 3: 
 
-![BERT_test_3]()
+![BERT_test_3](https://raw.githubusercontent.com/Alex01234/NLP_with_XAI/main/BERT_test_3.PNG)
 
-The predicted probabilites for example 3 are x, x, x and x <br>
-The true values for the labels are x, x, x and x.
+The predicted probabilites for example 3 are 0.000056733, 0.00001346, 0.81582 and 0.18411 <br>
+The true values for the labels are 0, 0, 1 and 1.
 
 - Example 4: 
 
-![BERT_test_4]()
+![BERT_test_4](https://raw.githubusercontent.com/Alex01234/NLP_with_XAI/main/BERT_test_4.PNG)
 
-The predicted probabilites for example 4 are x, x, x and x <br>
-The true values for the labels are x, x, x and x.
+The predicted probabilites for example 4 are 0.000017749, 0.0000030367, 0.99998 and 0.0000042155 <br>
+The true values for the labels are 1, 0, 1 and 0.
 
 ---
 ## Generating explanations with LIME
