@@ -124,5 +124,13 @@ For example 4, LIME predicts the label Mathematics with a probability of 1.00, w
 
 ---
 ## Generating explanations with SHAP
+To generate explanations with SHAP, we will use Google Colab Notebooks aswell.
+- Go to Google Drive.
+- Either create a Google Colab Notebook and name it to what you'd like, or upload the file NLP_with_XAI_SHAP.ipynb.
+- Observe that you need the folders with the fine-tuned tokenizer and the fine-tuned model uploaded to Google Drive, as described in the section "Generating explanations with LIME". Similarly, the paths to the tokenizer and the model might have to be adjusted in the file NLP_with_XAI_SHAP.ipynb
+- Re-use the code from the file NLP_with_XAI_SHAP.ipynb, either by downloading the file and uploading it to your Google Drive, or copying and pasting the code to your own Google Colab Notebook.
+- Run the code, cell by cell.
+- In the final cell, the variable "text" can be set equal to the text that you want to generate an explanation for. This will generate explanations for the classifications of all the labels by the BERT model, as interpreted by SHAP. See section 3.6 in this [article](https://ecp.ep.liu.se/index.php/shi/article/view/456) for an explanation how SHAP generates explanations.
+
 
 ---
