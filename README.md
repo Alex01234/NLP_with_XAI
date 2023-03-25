@@ -2,6 +2,10 @@
 
 In this project, I will describe step-by-step how to fine-tune a BERT model to classify texts with multiple labels and how to use the eXplainable AI (XAI) models LIME and SHAP in order to understand individual classifications of texts made by BERT. 
 
+BERT: [Model.](https://huggingface.co/bert-base-uncased) [Article.](https://arxiv.org/pdf/1810.04805.pdf)
+LIME: [Model.](https://github.com/marcotcr/lime) [Article.](https://arxiv.org/pdf/1602.04938.pdf)
+SHAP: [Model.](https://github.com/slundberg/shap) [Article.](https://arxiv.org/pdf/1705.07874.pdf)
+
 Note: This code is based upon an original code by myself (Alexander Dolk) and Hjalmar Davidsen. The [original code](https://github.com/Alex01234/MastersThesis/) was used for our Master thesis at Stockholm University, and for our [published academic article](https://ecp.ep.liu.se/index.php/shi/article/view/456). 
 
 ---
